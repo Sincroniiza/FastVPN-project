@@ -1,0 +1,809 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;700;800&display=swap");
+
+html {
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth; /* https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section1 */
+}
+
+/* START OF index.html */
+
+body {
+  min-height: 100vh;
+  margin: 0px;
+  padding: 0px;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(30, 30, 30);
+}
+
+/* highlight nav buttons. Sourced via: https://www.youtube.com/watch?v=l9niaFJh8Gs&ab_channel=ThomasBradley */
+.current {
+  color: white;
+  border-bottom: 2px solid #2584ff;
+}
+
+.current:hover {
+  color: rgb(209, 208, 208);
+  transition: all 0.085s ease 0s;
+}
+
+.nav_logo {
+  cursor: pointer;
+  position: relative;
+  top: 15px;
+  left: 35px;
+  height: 35px;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  margin-right: 50px;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(209, 208, 208);
+}
+
+a:hover {
+  transition: all 0.085s ease 0s;
+  color: rgb(255, 255, 255);
+}
+
+.home-section {
+  background-color: rgb(30, 30, 30);
+  width: 100vw;
+  height: 45rem;
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  background-color: rgb(30, 30, 30);
+  width: 100%;
+  height: 800px;
+  max-height: 700px;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.box-one {
+  position: relative;
+  top: 3rem;
+  height: 33rem;
+  width: 40rem;
+}
+
+.box-two {
+  position: relative;
+  height: 41rem;
+  width: 45rem;
+  background-image: url("/images/Secure.index.svg"); /*  Image sourced via Adobe Stock with license */
+  background-size: 100% 100%;
+}
+
+.homeTitle {
+  color: white;
+  font-weight: 800;
+  font-size: 70px;
+}
+
+.homeDescription {
+  color: rgb(189, 189, 189);
+  font-size: 20px;
+  position: relative;
+  bottom: 2rem;
+}
+
+.button1 {
+  position: relative;
+  cursor: pointer;
+  color: white;
+  border-radius: 50px;
+  font-size: 18px;
+  padding: 18px 58px;
+  background-color: #2584ff;
+  outline: none;
+  border: none;
+  transition: all 0.3s ease 0s;
+}
+
+.button1:hover {
+  background-color: rgb(10, 93, 160);
+  transform: scale(
+    1.03
+  ); /* https://www.w3schools.com/cssref/css3_pr_transform.asp */
+}
+
+.plan-info {
+  position: relative;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.info {
+  margin-bottom: 50px;
+}
+
+.plan-info-heading {
+  font-weight: 700;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.plan-info-description {
+  color: rgb(100, 100, 100);
+  text-align: center;
+}
+
+.info-comment {
+  height: 180px;
+  width: 50%;
+  border-left: 2px solid rgb(10, 93, 160);
+  margin-top: 80px;
+}
+
+.info-comment-heading {
+  position: relative;
+  bottom: 15px;
+  margin-left: 50px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.info-comment-description {
+  color: rgb(100, 100, 100);
+  position: relative;
+  bottom: 20px;
+  margin-left: 50px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.plan-info-div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.plan-info-div-2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.info-image {
+  position: relative;
+  background-image: url("/images/Plan-info.svg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 350px;
+  left: 5rem;
+}
+
+.products-leftgrid-home {
+  background-image: url("/images/undraw_android_jr64.svg");
+  background-size: 100% 100%;
+  height: 85%;
+  width: 50%;
+}
+
+.home-gridbox-title {
+  position: relative;
+  bottom: 15px;
+  margin-left: 50px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.home-gridbox-description {
+  color: rgb(100, 100, 100);
+  position: relative;
+  bottom: 20px;
+  margin-left: 50px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.footer-div {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(30, 30, 30);
+  margin: 0 auto;
+  margin-top: 150px;
+  height: 320px;
+  width: 100%;
+  max-height: 400px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 1140px;
+  max-height: 320px;
+  width: 100%;
+  height: 100%;
+}
+
+.footer-section1 {
+  width: 20%;
+  height: 80%;
+}
+
+.footer-logo {
+  position: relative;
+  left: 25px;
+  margin-top: 50px;
+}
+
+.logo-comment {
+  margin-top: 30px;
+  text-align: center;
+  color: rgb(126, 126, 126);
+}
+
+.logo-comment:hover {
+  color: white;
+  cursor: pointer;
+  transition: all 0.085s ease 0s;
+}
+
+.footer-section2 {
+  width: 20%;
+  height: 80%;
+}
+
+.footer-header {
+  text-align: center;
+  height: 20%;
+  position: relative;
+  top: 10px;
+  color: white;
+}
+
+.list-ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: rgb(126, 126, 126);
+  height: 60%;
+  padding: 0;
+  margin: 0;
+}
+
+.list-li {
+  text-align: center;
+  margin: 0;
+  transition: all 0.085s ease 0s;
+}
+
+.list-li:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.footer-section3 {
+  width: 20%;
+  height: 80%;
+}
+
+.footer-section4 {
+  width: 20%;
+  height: 80%;
+}
+/*  END OF index.html
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/*  START OF products.html */
+
+.products-section {
+  background-color: rgb(30, 30, 30);
+  width: 100vw;
+  height: 45rem;
+}
+
+.product-boxes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 700px;
+  max-height: 700px;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.products-box-one {
+  position: relative;
+  height: 80%;
+  width: 45%;
+}
+
+.products-box-two {
+  background-image: url("/images/Server-products.svg");
+  background-size: 100% 100%;
+  position: relative;
+  height: 100%;
+  width: 50%;
+}
+
+.products-title {
+  color: white;
+  font-weight: 800;
+  font-size: 50px;
+}
+
+.products-description {
+  color: rgb(189, 189, 189);
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+}
+
+.products-sectionbutton {
+  position: relative;
+  cursor: pointer;
+  color: white;
+  border-radius: 50px;
+  top: 20px;
+  font-size: 18px;
+  padding: 18px 58px;
+  background-color: #2584ff;
+  outline: none;
+  border: none;
+  transition: all 0.3s ease 0s;
+}
+
+.products-sectionbutton:hover {
+  background-color: rgb(10, 93, 160);
+  transform: scale(1.03);
+  transition: all 0.3s ease 0s;
+}
+/*--------------------------------------------------------------------------*/
+/* containers for content on products page */
+.products-gridbox,
+.products-gridbox2,
+.products-gridbox3 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 600px;
+  max-height: 700px;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* left div for first container on products page */
+.products-leftgrid {
+  position: relative;
+  height: 50%;
+  width: 50%;
+  border-left: 2px solid rgb(10, 93, 160);
+}
+
+.products-leftgrid3 {
+  position: relative;
+  height: 37%;
+  width: 50%;
+  border-left: 2px solid rgb(10, 93, 160);
+}
+
+.products-gridbox-title {
+  position: relative;
+  bottom: 20px;
+  margin-left: 50px;
+  font-size: 26px;
+  font-weight: 600;
+  word-spacing: 1.5px;
+  line-height: 35px;
+}
+
+.products-gridbox-description {
+  position: relative;
+  bottom: 5px;
+  margin-left: 50px;
+  font-weight: 300;
+  word-spacing: 1.5px;
+  line-height: 27px;
+}
+
+.products-button {
+  background-color: #2584ff;
+  position: relative;
+  top: 10px;
+  left: 40px;
+  margin-left: 10px;
+  border-radius: 10px;
+  padding: 18px 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: white;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease 0s;
+}
+
+.products-button:hover {
+  background-color: rgb(10, 93, 160);
+  transform: scale(1.03);
+  transition: all 0.3s ease 0s;
+}
+
+/*--------------------------------------------------------------------------*/
+
+/* right div for containers on products page */
+
+.products-rightgrid {
+  background-image: url("/images/Privacy-index3.svg");
+  background-size: 100% 100%;
+  height: 85%;
+  width: 50%;
+}
+
+.products-rightgrid3 {
+  background-image: url("/images/freedom-products.svg");
+  background-size: 100% 100%;
+  height: 85%;
+  width: 50%;
+}
+
+/* left div for second container on products page */
+.products-leftgrid2 {
+  background-image: url("/images/Fast-products.svg");
+  background-size: 100% 100%;
+  height: 85%;
+  width: 50%;
+}
+
+.products-rightgrid2 {
+  position: relative;
+  left: 20px;
+  height: 37%;
+  width: 50%;
+  border-left: 2px solid rgb(10, 93, 160);
+}
+
+/*--------------------------------------------------------------------------*/
+/*----------------------------------- Start of Gallery.html ---------------------------------------*/
+
+.gallery-section {
+  background-color: rgb(30, 30, 30);
+  width: 100%;
+  height: 720px;
+  margin: 0 auto;
+}
+
+.gallery-boxes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 45rem;
+  max-height: 700px;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.gallery-box-one {
+  position: relative;
+  top: 2rem;
+  height: 80%;
+  width: 45%;
+}
+
+.gallery-box-two {
+  position: relative;
+  bottom: 1rem;
+  height: 80%;
+  width: 45%;
+  background-image: url("/images/undraw_awards_fieb.svg");
+  background-size: 100% 100%;
+}
+
+.box-one-head {
+  color: white;
+  font-weight: 800;
+  font-size: 50px;
+}
+
+.box-one-desc {
+  color: rgb(189, 189, 189);
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+}
+
+.plan-info-awards {
+  margin-top: 100px;
+}
+
+.javaImagesContainer {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.javaImages {
+  text-align: center;
+  transition: all 0.3s ease 0s;
+}
+
+.logo-descriptions {
+  max-width: 15rem;
+}
+
+.logo-company {
+  position: relative;
+  top: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.logo-author {
+  padding: 0;
+  margin: 0;
+  font-weight: 200;
+}
+
+.javaImages:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease 0s;
+}
+
+.javaContent {
+  text-align: center;
+}
+
+/*----------------------------------- Start of Pricing.html ---------------------------------------*/
+
+.pricing-box-two {
+  position: relative;
+  bottom: 1rem;
+  height: 80%;
+  width: 45%;
+  background-image: url("/images/undraw_discount_d4bd.svg");
+  background-size: 100% 100%;
+}
+
+.grid-box {
+  display: flex;
+  justify-content: space-between;
+  max-height: 700px;
+  max-width: 1140px;
+  margin: 0 auto;
+  width: 100%;
+  height: 700px;
+  margin-top: 120px;
+}
+
+.plan {
+  position: relative;
+  top: 7rem;
+  background-color: white;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.06);
+  width: 31%;
+  height: 33rem;
+  border-radius: 20px;
+  transition-duration: 0.2s;
+}
+
+.plan:hover {
+  transform: scale(1.03);
+  transition: all 0.3s ease 0s;
+}
+
+.plan-popular {
+  position: relative;
+  height: 35rem;
+  width: 34%;
+  top: 6rem;
+}
+
+/*  left and right plan-boxes body content positioning */
+.plan-body {
+  position: relative;
+  height: 22rem;
+  width: 22rem;
+  top: 9rem;
+  margin-top: 30px;
+}
+
+.planpopular-body {
+  position: relative;
+  height: 23rem;
+  width: 22rem;
+  top: 10rem;
+  margin-top: 30px;
+}
+
+.plan-header,
+.planpopular-header {
+  color: white;
+  background-color: rgb(5, 119, 212);
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 160px;
+  line-height: 40px;
+  text-indent: 10px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+/* different colour header for middle plan-div  */
+.planpopular-header {
+  background-color: rgb(110, 23, 231);
+}
+
+/*  all three plan-div headings - styling/positioning */
+.planh {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  position: relative;
+  left: 15px;
+  bottom: 5px;
+}
+
+/*  all three plan-div heading descriptions - styling/positioning */
+.pland {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  position: relative;
+  top: 55px;
+  right: 30px;
+  font-size: 50px;
+}
+
+.plan-billing-cycle {
+  color: white;
+  position: relative;
+  top: 55px;
+  right: 25px;
+}
+
+.plan-comment {
+  display: block;
+  position: relative;
+  top: 55px;
+  font-size: 18px;
+  margin-left: 15px;
+}
+
+.list-items,
+li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+/*  middle plan-div seperate positioning. (Larger div) */
+
+/* plan buttons "View Plan" positioning/styling/hover */
+
+.button2 {
+  position: relative;
+  bottom: 0.5rem;
+  margin-left: 20%;
+  color: black;
+  font-size: 1.3rem;
+  padding: 12px 54px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  border: 3px solid black;
+  outline: none;
+}
+
+.button3 {
+  margin-left: 25%;
+  color: black;
+  font-size: 1.3rem;
+  padding: 12px 54px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  border: 3px solid black;
+  outline: none;
+}
+
+.button3:hover {
+  color: white;
+  background-color: rgb(10, 93, 160);
+  transition: all 0.3s ease 0s;
+}
+
+.button2:hover {
+  color: white;
+  background-color: rgb(10, 93, 160);
+  transition: all 0.3s ease 0s;
+}
+
+.iconContainer {
+  position: absolute;
+  left: 320px;
+  top: 10px;
+}
+
+.plan-popular-icon {
+  position: relative;
+  right: 5px;
+  align-content: center;
+}
+
+.grid-box-pricing {
+  display: flex;
+  justify-content: space-between;
+  max-height: 700px;
+  max-width: 1140px;
+  margin: 0 auto;
+  width: 100%;
+  height: 700px;
+  margin-top: 80px;
+}
+
+.plan-info-pricing {
+  position: relative;
+  width: 100%;
+  max-width: 1140px;
+  max-height: 800px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.plan-info-div-pricing {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  top: 30px;
+}
+
+.info-image-pricing {
+  position: relative;
+  left: 10rem;
+  top: 2rem;
+}
+
+/*----------------------------------- Start of About.html ---------------------------------------*/
+
+.about-section {
+  background-color: rgb(30, 30, 30);
+}
+
+.reference-ul {
+  position: relative;
+  top: 50px;
+  display: flex;
+  font-style: italic;
+  list-style-type: square;
+  padding: 0;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1140px;
+  color: white;
+}
+
+.reference-item {
+  display: list-item;
+}
