@@ -8,7 +8,7 @@ A pure HTML/CSS website featuring:
 - UI Design
 - CSS animations/transitions
 - Performant webpage with appropriate resolution for logos/text.
-- SVG illustrations for a clear and optimised user experience.
+- SVG illustrations.
 
 What i would of liked to implement further:
 - Mobile Design/Responsive Design
